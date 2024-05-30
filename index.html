@@ -18,22 +18,25 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
 
   <div class="main-container">
-    <h1>Age Calculator</h1>
-    <div class="input-group">
-      <input type="number" id="day" placeholder="Day" min="1" max="31">
-      <input type="number" id="month" placeholder="Month" min="1" max="12">
-      <input type="number" id="year" placeholder="Year" min="1">
-    </div>
+      <h1></h1><!--optional-->
+      <div class="input-group">
+        <input type="number" id="day" placeholder="DDD" min="1" max="31">
+        <input type="number" id="month" placeholder="MMM" min="1" max="12">
+        <input type="number" id="year" placeholder="YYY" min="1">
+      </div>
+      <button onclick="calculateAge()">Calculate Age</button>
+      <p id="result"></p>
   </div>
-  <button onclick="calculateAge()">Calculate Age</button>
-  <p id="result"></p>
+
+  </div><!---->
+  
+  
 <!--
   Day
   DD

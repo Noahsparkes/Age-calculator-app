@@ -1,0 +1,54 @@
+body{
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+   
+}
+
+.main-container{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 100px;
+    width:800px ;
+    height: 600px;
+    justify-content: center;
+    text-align: left;
+    border-radius: 2em 2em 11em ; /*differernt values for different corners of the div*/
+    font-family: popins,sans-serif;
+}
+
+.input-group{
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+
+#day{
+    height:50px;
+    width:80px ;
+    border-radius:8px;
+}
+
+#month{
+    height:50px;
+    width:80px ;
+    border-radius:8px;
+}
+
+#year{
+    height:50px;
+    width:80px ;
+    border-radius:8px;
+}
+    
+
+
+
+/*
+Todo list:
+- continue with the input fields
+- add space between input fields
+- style input fields accordingly
+- add a breakline between the input fields and output. 
+- style the button.
+- handle error casses and style no input casses.
+*/

@@ -16,7 +16,7 @@ function calculateAge() {
     const year = parseInt(yearInput, 10);
   
     // Create a Date object from the input values
-    const dob = new Date(year, month, day);
+    const dob = new Date(year, month, day); 
     const today = new Date();
   
     // Check if the date of birth is in the future
@@ -45,8 +45,26 @@ function calculateAge() {
   
     // Display the result
     document.getElementById('result').innerText = `You are ${years} years, ${months} months, and ${days} days old.`;
-  }
+  } //change thi sstatement 
   
   // Adding a debug statement to ensure the script is loaded
   console.log('Script loaded successfully');
   
+
+
+
+  /*todo list
+
+  -start styling the container.
+  -
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  */
