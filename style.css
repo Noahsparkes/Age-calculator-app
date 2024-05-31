@@ -1,45 +1,72 @@
-body{
+body {
     background-color: hsl(0, 0%, 94%);
     display: flex;
     justify-content: center;
-   
 }
 
-.main-container{
+.main-container {
     background-color: hsl(0, 0%, 100%);
     margin-top: 100px;
-    width:800px ;
+    width: 800px;
     height: 600px;
     justify-content: center;
     text-align: left;
-    border-radius: 2em 2em 11em ; /*differernt values for different corners of the div*/
-    font-family: popins,sans-serif;
+    border-radius: 2em 2em 11em;
+    font-family: 'Poppins', sans-serif;
 }
 
-.input-group{
-    margin-top: 100px;
-    margin-left: 70px;
-
+.input-group {
+    display: flex;
+    justify-content: left;  /*was space-between*/
+    align-items: center; 
+    margin-top: 60px;
+    margin-left: 30px; /*space from the side wall*/
 }
 
-#day{
-    height:50px;
-    width:80px ;
-    border-radius:8px;
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
 }
 
-#month{
-    height:50px;
-    width:80px ;
-    border-radius:8px;
-}
-
-#year{
-    height:50px;
-    width:80px ;
-    border-radius:8px;
-}
+.input-item h1 {
+    display: flex;
+  
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 10px;
     
+}
+
+#day, #month, #year {
+    height: 50px;
+    width: 80px;
+    border-radius: 8px;
+    font-family: 'popins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+hr{
+    width: 75%; /* Adjust this value to control the length of the hr line */
+    border: .5px solid hsl(0, 1%, 44%); /* Adjust the border style, color, and thickness if needed */
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#result{
+font-family:'Poppins', sans-serif; 
+font-size: 32px;
+font-weight: 800;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -44,27 +44,13 @@ function calculateAge() {
     }
   
     // Display the result
-    document.getElementById('result').innerText = `You are ${years} years, ${months} months, and ${days} days old.`;
-  } //change thi sstatement 
+    document.getElementById('result').innerText = `${years} years ${months} months ${days} days`;
+  } //change this statement 
   
   // Adding a debug statement to ensure the script is loaded
   console.log('Script loaded successfully');
   
 
 
-
-  /*todo list
-
-  -start styling the container.
-  -
+ 
   
-  
-  
-  
-  
-  
-  
-  
-
-  
-  */

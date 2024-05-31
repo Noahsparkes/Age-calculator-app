@@ -21,36 +21,30 @@
     
   </style>
 </head>
-<body>
-
-  <div class="main-container">
-      <h1></h1><!--optional-->
-      <div class="input-group">
-        <input type="number" id="day" placeholder="DDD" min="1" max="31">
-        <input type="number" id="month" placeholder="MMM" min="1" max="12">
-        <input type="number" id="year" placeholder="YYY" min="1">
-      </div>
-      <button onclick="calculateAge()">Calculate Age</button>
-      <p id="result"></p>
+<div class="main-container">
+  <h1></h1><!--optional-->
+  <div class="input-group">
+    <div class="input-item">
+      <h1>Day</h1>
+      <input type="number" id="day" placeholder="DD" min="1" max="31">
+    </div>
+    <div class="input-item">
+      <h1>Month</h1>
+      <input type="number" id="month" placeholder="MM" min="1" max="12">
+    </div>
+    <div class="input-item">
+      <h1>Year</h1>
+      <input type="number" id="year" placeholder="YYY" min="1">
+    </div>
   </div>
-
-  </div><!---->
+  <hr>
+  <button onclick="calculateAge()">Calculate Age</button>
+  <p id="result"></p>
+</div>
   
-  
-<!--
-  Day
-  DD
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
+ 
+  <!---
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Noah Sparkes</a>.
