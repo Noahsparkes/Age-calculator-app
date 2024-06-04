@@ -44,7 +44,9 @@ function calculateAge() {
     }
   
     // Display the result
-    document.getElementById('result').innerText = `${years} years ${months} months ${days} days`;
+    document.getElementById('result').innerText = `${years} years 
+    ${months} months 
+    ${days} days`;
   } //change this statement 
   
   // Adding a debug statement to ensure the script is loaded

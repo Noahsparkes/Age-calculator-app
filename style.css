@@ -20,7 +20,7 @@ body {
     justify-content: left;  /*was space-between*/
     align-items: center; 
     margin-top: 60px;
-    margin-left: 30px; /*space from the side wall*/
+    margin-left: 40px; /*space from the side wall*/
 }
 
 .input-item {
@@ -40,9 +40,10 @@ body {
 }
 
 #day, #month, #year {
-    height: 50px;
-    width: 80px;
+    height: 75px; 
+    width: 150px;
     border-radius: 8px;
+    border-color:hsl(0, 1%, 44%);
     font-family: 'popins', sans-serif;
     font-size: 32px;
     font-weight: 600;
@@ -51,14 +52,53 @@ hr{
     width: 75%; /* Adjust this value to control the length of the hr line */
     border: .5px solid hsl(0, 1%, 44%); /* Adjust the border style, color, and thickness if needed */
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
-#result{
-font-family:'Poppins', sans-serif; 
-font-size: 32px;
-font-weight: 800;
+
+/*#result {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color:#6c63ff ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the flex container 
+    padding: 20px;
+}*/
+
+
+.result {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px
 }
+
+.result span {
+    display:block;
+    color: #6c63ff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.result h1{
+    font-size: 40px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,10 +112,10 @@ font-weight: 800;
 
 /*
 Todo list:
-- continue with the input fields
-- add space between input fields
+- continue with the input fields \
+- add space between input fields \
 - style input fields accordingly
-- add a breakline between the input fields and output. 
+- add a breakline between the input fields and output. \
 - style the button.
 - handle error casses and style no input casses.
 */
