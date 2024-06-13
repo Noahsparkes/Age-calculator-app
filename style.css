@@ -52,43 +52,64 @@ hr{
     width: 75%; /* Adjust this value to control the length of the hr line */
     border: .5px solid hsl(0, 1%, 44%); /* Adjust the border style, color, and thickness if needed */
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right:2px ;
+}
+
+.line-with-button {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
     margin-left: 40px;
 }
 
+#arrow-button{
+    cursor: pointer;
+    
+    background-color: #6c63ff;
+    border-radius: 50px;
+    border: none;
+    width: 90px;
+    height: 90px;
+}
 
-/*#result {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    color:#6c63ff ;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the start of the flex container 
-    padding: 20px;
-}*/
+#arrow-button img {
+    width: 45px; /* Adjust the size of the image */
+    height: 45px; /* Adjust the size of the image */
+}
+
 
 
 .result {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 800;
     text-align: left;
-    margin-top: 20px;
-    margin-left: 40px
+    margin-left: 80px;
+}
+
+.line {
+    display: flex;
+    align-items: baseline;
+    margin-bottom:-100px ;
+    
 }
 
 .result span {
-    display:block;
     color: #6c63ff;
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 60px;
+    margin-right: 10px;
 }
 
-.result h1{
-    font-size: 40px;
+.result h1 {
+    font-size: 60px;
     display: inline-block;
 }
 
-
+.error-message {
+    color: red;
+    font-size: 14px;
+    height: 20px; /* Ensure space is reserved for the error message */
+}
 
 
 

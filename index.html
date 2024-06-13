@@ -22,29 +22,42 @@
   </style>
 </head>
 <div class="main-container">
-  <h1></h1><!--optional-->
+  <h1></h1><!--optional--> 
   <div class="input-group">
     <div class="input-item">
       <h1>Day</h1>
       <input type="number" id="day" placeholder="DD" min="1" max="31">
+      <span class="error-message" id="day-error"></span>
     </div>
     <div class="input-item">
       <h1>Month</h1>
       <input type="number" id="month" placeholder="MM" min="1" max="12">
+      <span class="error-message" id="month-error"></span>
     </div>
     <div class="input-item">
       <h1>Year</h1>
       <input type="number" id="year" placeholder="YYY" min="1">
+      <span class="error-message" id="year-error"></span>
     </div>
   </div>
-  <hr>
-  <button onclick="calculateAge()">Calculate Age</button>
+  <div class="line-with-button">
+    <hr>
+    <button onclick="calculateAge()" id="arrow-button">
+      <img src="./assets/images/icon-arrow.svg" alt="Arrow-button">
+    </button>
+  </div>
+  <div id="result" class="result">
+    <div class="line">
+        <span class="years">--</span><h1>years</h1>
+    </div>
+    <div class="line">
+        <span class="months">--</span><h1>months</h1>
+    </div>
+    <div class="line">
+        <span class="days">--</span><h1>days</h1>
+    </div>
+</div>
 
-  <div  id="result" class="result">
-    <span class="years">--</span><h1>years</h1>
-    <span class="months">--</span><h1>months</h1>
-    <span class="days">--</span><h1>days</h1>
- </div>
 
 </div>
  
