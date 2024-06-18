@@ -1,34 +1,49 @@
 function calculateAge() {
-  // Get the values from the input fields
-  const dayInput = document.getElementById('day').value;
-  const monthInput = document.getElementById('month').value;
-  const yearInput = document.getElementById('year').value;
+  // Get the input elements
+  const dayInputElement = document.getElementById('day');
+  const monthInputElement = document.getElementById('month');
+  const yearInputElement = document.getElementById('year');
+
+  // Get the input values
+  const dayInput = dayInputElement.value;
+  const monthInput = monthInputElement.value;
+  const yearInput = yearInputElement.value;
 
   // Initialize error state
   let hasError = false;
 
+  // Helper function to set error messages and styling
+  function setError(element, errorElementId, message) {
+    document.getElementById(errorElementId).innerText = message;
+    element.classList.add('error-input');
+    hasError = true;
+  }
+
+  // Helper function to clear error messages and styling
+  function clearError(element, errorElementId) {
+    document.getElementById(errorElementId).innerText = '';
+    element.classList.remove('error-input');
+  }
+
   // Check if the day input is empty and display error message if needed
   if (!dayInput) {
-    document.getElementById('day-error').innerText = 'This field is required';
-    hasError = true;
+    setError(dayInputElement, 'day-error', 'This field is required');
   } else {
-    document.getElementById('day-error').innerText = '';
+    clearError(dayInputElement, 'day-error');
   }
 
   // Check if the month input is empty and display error message if needed
   if (!monthInput) {
-    document.getElementById('month-error').innerText = 'This field is required';
-    hasError = true;
+    setError(monthInputElement, 'month-error', 'This field is required');
   } else {
-    document.getElementById('month-error').innerText = '';
+    clearError(monthInputElement, 'month-error');
   }
 
   // Check if the year input is empty and display error message if needed
   if (!yearInput) {
-    document.getElementById('year-error').innerText = 'This field is required';
-    hasError = true;
+    setError(yearInputElement, 'year-error', 'This field is required');
   } else {
-    document.getElementById('year-error').innerText = '';
+    clearError(yearInputElement, 'year-error');
   }
 
   // If there is any error, stop the function execution
@@ -45,9 +60,19 @@ function calculateAge() {
   const dob = new Date(year, month, day);
   const today = new Date();
 
+  // Validate if the date is correct
+  if (dob.getFullYear() !== year || dob.getMonth() !== month || dob.getDate() !== day) {
+    setError(dayInputElement, 'day-error', 'Must be a valid date');
+    setError(monthInputElement, 'month-error', 'Must be a valid date');
+    setError(yearInputElement, 'year-error', 'Must be a valid date');
+    return;
+  }
+
   // Check if the date of birth is in the future and display error if so
   if (dob > today) {
-    document.getElementById('result').innerText = 'The date of birth cannot be in the future';
+    setError(dayInputElement, 'day-error', 'must be a valid day');
+    setError(monthInputElement, 'month-error', 'must be a valid month');
+    setError(yearInputElement, 'year-error', 'must be in the past');
     return;
   }
 

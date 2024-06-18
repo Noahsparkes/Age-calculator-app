@@ -111,20 +111,11 @@ hr{
     height: 20px; /* Ensure space is reserved for the error message */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Add this CSS to your stylesheet */
+.error-input{
+    border: 2px solid red;
+  }
+  
 
 
 
@@ -133,10 +124,15 @@ hr{
 
 /*
 Todo list:
-- continue with the input fields \
-- add space between input fields \
-- style input fields accordingly
-- add a breakline between the input fields and output. \
-- style the button.
-- handle error casses and style no input casses.
+
+JS:
+- handle error casses -->
+(-future dates first
+ - past dates second.)
+
+  Style:
+- skew input titles to the right.
+- fix line thickness.
+- resize 'results' and make italic?.
+Final little stretch!
 */
