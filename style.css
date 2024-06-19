@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: left;  /*was space-between*/
     align-items: center; 
-    margin-top: 60px;
+    margin-top: 45px;
     margin-left: 40px; /*space from the side wall*/
 }
 
@@ -31,10 +31,10 @@ body {
 }
 
 .input-item h1 {
-    display: flex;
-  
+    display:flex;
     font-size: 16px;
     margin: 0;
+    padding-right: 110px;
     padding-bottom: 10px;
     
 }
@@ -49,23 +49,22 @@ body {
     font-weight: 600;
 }
 hr{
-    width: 75%; /* Adjust this value to control the length of the hr line */
-    border: .5px solid hsl(0, 1%, 44%); /* Adjust the border style, color, and thickness if needed */
+    width: 77%; /* Adjust this value to control the length of the hr line */
+    border: .7 solid hsl(0, 1%, 44%); /* Adjust the border style, color, and thickness if needed */
     margin-top: 20px;
     margin-left: 0px;
-    margin-right:2px ;
+    margin-right: 2px ;
 }
 
 .line-with-button {
     display: flex;
     align-items: center;
-    margin-top: -15px;
+    margin-top: -30px;
     margin-left: 40px;
 }
 
 #arrow-button{
     cursor: pointer;
-    
     background-color: #6c63ff;
     border-radius: 50px;
     border: none;
@@ -85,6 +84,7 @@ hr{
     font-weight: 800;
     text-align: left;
     margin-left: 80px;
+    margin-top: -80px;
 }
 
 .line {
@@ -96,12 +96,12 @@ hr{
 
 .result span {
     color: #6c63ff;
-    font-size: 60px;
+    font-size: 70px;
     margin-right: 10px;
 }
 
 .result h1 {
-    font-size: 60px;
+    font-size: 70px;
     display: inline-block;
 }
 
