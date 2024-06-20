@@ -135,9 +135,12 @@ background-color: #6c63ff;
     height: 20px; /* Ensure space is reserved for the error message */
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
 
 
-/*
-Todo list:
-- move dd,mm,yyy to the right place a smidge.
-*/
