@@ -41,6 +41,7 @@ body {
     
 }
 
+
 #day, #month, #year {
     height: 65px; 
     width: 150px;
@@ -49,8 +50,14 @@ body {
     font-family: 'popins', sans-serif;
     font-size: 32px;
     font-weight: 600;
+    outline: none;
 }
 
+#day:focus, #month:focus, #year:focus {
+    border-color: #6c63ff;
+    caret-color: #6c63ff;
+    cursor: pointer;
+}
 
 hr{
     width: 77%; /* Adjust this value to control the length of the hr line */
@@ -128,18 +135,9 @@ background-color: #6c63ff;
     height: 20px; /* Ensure space is reserved for the error message */
 }
 
-/*.error-input{
-    border: 2px solid red;
-  }*/
-  
-
-
-
-
 
 
 /*
 Todo list:
-- fix highlighted day, month, year.
 - move dd,mm,yyy to the right place a smidge.
 */
